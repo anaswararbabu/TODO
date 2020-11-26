@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/tonystar/bootstrap-float-label/v4.0.2/bootstrap-float-label.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>TODO</title>
+</head>
+<body>
+    
+        <!-- side bar -->
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancel"></i>
+        </label>
+        <div class="sidebar">
+         <header>My ToDo Web App</header>
+         <ul>
+            <li><a href="#"><i class="fas fa-qrcode"></i>Today's Agenda</a></li>
+            <li><a href="#"><i class="fas fa-calendar-week"></i>Calender</a></li>
+            <li><a href="login.html"><i class="fas fa-stream"></i>Login</a></li>
+ 
+        </ul>
+        </div>
+<!-- circle -->
+
+    <section class="landing">
+        <img src="./circles.svg" alt="MY TODO WEB APP" />
+            <h1>MY TODO WEB APP</h1>
+    </section>
+
+
+
+
+
+</body>
+<script>
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+    const links = document.querySelectorAll(".nav-links li");
+
+    hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("open");
+    links.forEach(link => {
+    link.classList.toggle("fade"); });
+});
+
+</script>
+</html>
